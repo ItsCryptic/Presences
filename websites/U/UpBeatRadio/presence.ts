@@ -139,11 +139,11 @@ presence.on("UpdateData", async () => {
 			presenceData.smallImageKey = Assets.Writing;
 		} else if (document.querySelector("#modaldjAppButton")) {
 			presenceData.details = "Applying for:";
-			presenceData.state = "Radio Presenter";
+			presenceData.state = "Station Presenter";
 			presenceData.smallImageKey = Assets.Writing;
 		} else if (document.querySelector("#modalmediaAppButton")) {
 			presenceData.details = "Applying for:";
-			presenceData.state = "News Reporter";
+			presenceData.state = "Content Reporter";
 			presenceData.smallImageKey = Assets.Writing;
 		} else if (document.querySelector("#accountBio")) {
 			presenceData.details = "Editing their bio";
@@ -155,6 +155,10 @@ presence.on("UpdateData", async () => {
 		} else if (document.querySelector("#modalpartnerEnquiryButton")) {
 			presenceData.details = "Sending in a";
 			presenceData.state = "partner enquiry";
+			presenceData.smallImageKey = Assets.Writing;
+		}else if (document.querySelector("#modalveteranEnquiryButton") {
+			presenceData.details = "Sending in a";
+			presenceData.state = "Veteran Enquiry"
 			presenceData.smallImageKey = Assets.Writing;
 		}
 	} else {
