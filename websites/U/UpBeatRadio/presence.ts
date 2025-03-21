@@ -103,7 +103,7 @@ presence.on('UpdateData', async () => {
       presenceData.smallImageKey = Assets.Writing
     }
     else if (document.location.pathname.includes('/Radio.RecentlyPlayed')) {
-      presenceData.details = 'Viewing the'
+      presenceData.details = 'Viewing'
       presenceData.state = 'recently played songs'
       presenceData.smallImageKey = Assets.Reading
     }
@@ -160,12 +160,12 @@ presence.on('UpdateData', async () => {
     }
     else if (document.querySelector('#modaldjAppButton')) {
       presenceData.details = 'Applying for:'
-      presenceData.state = 'Radio Presenter'
+      presenceData.state = 'Station Presenter'
       presenceData.smallImageKey = Assets.Writing
     }
     else if (document.querySelector('#modalmediaAppButton')) {
       presenceData.details = 'Applying for:'
-      presenceData.state = 'News Reporter'
+      presenceData.state = 'Content Reporter'
       presenceData.smallImageKey = Assets.Writing
     }
     else if (document.querySelector('#accountBio')) {
